@@ -1252,7 +1252,11 @@ window.SquirrelPlanApp = {};
         document.getElementById('run-standard-simulation-btn').addEventListener('click', () => runAndRender(true));
         document.getElementById('run-monte-carlo-btn').addEventListener('click', () => runAndRenderMonteCarlo());
         
-        document.getElementById('export-btn-dropdown').addEventListener('click', exportData);
+        document.getElementById('export-btn-dropdown').addEventListener('click', () => {
+    if(confirm("Do you want to export your plan?")) {
+        exportData();
+    }
+});
         document.getElementById('import-btn-dropdown').addEventListener('click', () => document.getElementById('import-file-input').click());
         document.getElementById('import-file-input').addEventListener('change', importData);
         document.getElementById('clear-plan-btn-dropdown').addEventListener('click', () => {
