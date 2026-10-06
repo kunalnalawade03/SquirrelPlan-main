@@ -800,7 +800,9 @@ window.SquirrelPlanApp = {};
                     updateSectionTitles();
         
                 } catch (error) {
-                    console.error('Error importing data:', error);
+    console.error('Error importing data:', error);
+    alert('Invalid file. Please select a valid SquirrelPlan file.');
+}
                 } finally {
                     // Reset file input to allow re-uploading the same file
                     event.target.value = null;
