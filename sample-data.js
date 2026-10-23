@@ -1,4 +1,4 @@
-ssd
+
 	function getSampleData(stage) {
     const recentGraduate = {
         assets: [
