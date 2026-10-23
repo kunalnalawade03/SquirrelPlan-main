@@ -1,4 +1,5 @@
-function getSampleData(stage) {
+ssd
+	function getSampleData(stage) {
     const recentGraduate = {
         assets: [
             { name: getTranslation('stocks'), value: '5000', return: '8', tax: '0', withdrawalOrder: 1 },
